@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table">
+  <thead>
+  	<tr>
+  		<th>
+  			Name
+  		</th>
+  		<th>
+  			Email
+  		</td>
+  		<th>
+  			Phone
+  		</th>
+  	</tr>
+  </thead>
+  <tbody>
+	{% for item in data %}
+	<tr>
+		<td>{{ item.name }}</td>
+		<td>{{ item.email }}</td>
+		<td>{{ item.phone }}</td>
+	</tr>
+	{% endfor %}
+   </tbody>
+</table>
+<a href="add/" class="btn btn-primary">Add New</a>
+{% endblock %}
