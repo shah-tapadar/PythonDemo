@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response,redirect
-
-from models import Data
+#import pdb;pdb.set_trace()
+from demoapp.models import Data
 
 # Create your views here.
 
